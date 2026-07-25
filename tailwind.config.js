@@ -6,6 +6,9 @@ export default {
   theme: {
     extend: {
       colors: {
+        "royal-blue": "#1B365D",
+        "ocean-azure": "#0A4D68",
+        "steel-blue": "#243B55",
         "inverse-surface": "#303030",
         "surface-bright": "#fbf9f8",
         "on-error": "#ffffff",

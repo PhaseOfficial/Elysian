@@ -43,8 +43,8 @@ const Contact = () => {
 
   return (
     <div className="bg-[#F7F4EE] min-h-screen pt-24 pb-32 font-sans">
-      {/* Header Section with Animated Icon Background */}
-      <section className="py-24 px-6 md:px-12 bg-[#1E2A38] text-white relative overflow-hidden text-center space-y-6">
+      {/* Header Section with Animated Icon Background & Animated Gradient */}
+      <section className="py-24 px-6 md:px-12 animate-hero-gradient text-white relative overflow-hidden text-center space-y-6">
         {/* Animated Background Icons */}
         <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
           {[

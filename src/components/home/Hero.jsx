@@ -5,7 +5,7 @@ import logo from "../../assets/elysian logo.PNG";
 
 const Hero = ({ fadeInUp, staggerContainer, floatAnimation }) => {
   return (
-    <section className="relative min-h-screen flex items-center pt-36 pb-24 px-6 md:px-12 overflow-hidden bg-gradient-to-b from-[#1E2A38] via-[#16222F] to-[#1E2A38] text-white border-b border-white/10">
+    <section className="relative min-h-screen flex items-center pt-36 pb-24 px-6 md:px-12 overflow-hidden animate-hero-gradient text-white border-b border-white/10">
       {/* Subtle Background Glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#B6924A]/10 rounded-full blur-3xl pointer-events-none"></div>
 

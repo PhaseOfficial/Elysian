@@ -5,8 +5,8 @@ import Certification from "../components/home/Certification";
 const About = () => {
   return (
     <div className="bg-[#F7F4EE] min-h-screen pt-24 pb-24 font-sans">
-      {/* Hero Header with Animated Background Icons */}
-      <section className="py-24 px-6 md:px-12 bg-[#1E2A38] text-white relative overflow-hidden text-center space-y-6">
+      {/* Hero Header with Animated Background Icons & Animated Gradient */}
+      <section className="py-24 px-6 md:px-12 animate-hero-gradient text-white relative overflow-hidden text-center space-y-6">
         <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
           {[
             { icon: "verified_user", top: "20%", left: "12%", size: "45px" },

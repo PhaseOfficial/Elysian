@@ -64,3 +64,28 @@ body {
 .label-caps {
   @apply font-label-md uppercase tracking-widest text-[10px];
 }
+
+/* Multi-Shade Animated Hero Background Gradient */
+@keyframes heroGradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-hero-gradient {
+  background: linear-gradient(-45deg, #1E2A38, #1B365D, #0A4D68, #16222F, #0F172A, #243B55);
+  background-size: 400% 400%;
+  animation: heroGradientShift 15s ease infinite;
+}

@@ -63,11 +63,11 @@ const Header = () => {
           </button>
           <Link to="/" className="flex items-center gap-2 sm:gap-3 group min-w-0" onClick={() => setIsMenuOpen(false)}>
             <img src={logo} alt="Elysian Consulting Ltd Logo" className="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0" />
-            <div className="flex flex-col min-w-0">
-              <span className="text-xs sm:text-lg md:text-xl text-[#1E2A38] font-bold tracking-tight uppercase truncate">
+            <div className="hidden sm:flex flex-col min-w-0">
+              <span className="text-sm sm:text-lg md:text-xl text-[#1E2A38] font-bold tracking-tight uppercase truncate">
                 ELYSIAN CONSULTING
               </span>
-              <span className="text-[8px] sm:text-[10px] text-[#B6924A] font-semibold tracking-widest uppercase -mt-0.5 truncate">
+              <span className="text-[9px] sm:text-[10px] text-[#B6924A] font-semibold tracking-widest uppercase -mt-0.5 truncate">
                 International Advisory
               </span>
             </div>
