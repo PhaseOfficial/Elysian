@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.PNG', '**/*.png'],
-  base: "/", // Set the base path for GitHub Pages deployment
+  base: "/Elysian/", // Set the base path for GitHub Pages deployment
 });
