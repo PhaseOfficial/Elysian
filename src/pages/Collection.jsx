@@ -102,7 +102,7 @@ const Services = () => {
               key={i}
               initial={{ opacity: 0 }}
               animate={{ 
-                opacity: [0.04, 0.12, 0.04],
+                opacity: [0.20, 0.45, 0.20],
                 y: [0, -30, 0],
                 x: [0, (i % 2 === 0 ? 20 : -20), 0]
               }}
@@ -122,7 +122,7 @@ const Services = () => {
             </motion.div>
           ))}
           <motion.div 
-            animate={{ scale: [1, 1.05, 1], opacity: [0.02, 0.05, 0.02] }}
+            animate={{ scale: [1, 1.05, 1], opacity: [0.08, 0.18, 0.08] }}
             transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#B6924A]"
           >
