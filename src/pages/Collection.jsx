@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 // Assets
 import projectAuditImg from "../assets/d3.png";
+import verificationOnSiteImg from "../assets/verification on site.png";
 import africanCarerImg from "../assets/african carer with african elderly man.png";
 import internationalCareImg from "../assets/carer with an elderly white couple.png";
 import carerTeamImg from "../assets/carer team.png";
@@ -49,7 +50,7 @@ const Services = () => {
       desc: "Acting as your eyes and ears on physical construction sites or emerging business operations, providing transparent photo, video, and written progress reports.",
       features: ["Site Inspection Logs", "Contractor Performance Verification", "On-Site Financial Audits"],
       color: "bg-[#16222F]/10 text-[#16222F] border-[#16222F]/20",
-      img: projectAuditImg
+      img: verificationOnSiteImg
     },
     {
       id: "local-representation",

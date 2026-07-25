@@ -6,7 +6,7 @@ import carerElderlyWomanImg from "../../assets/carer with elderly woman.png";
 const TrustBanner = () => {
   const trustItems = [
     { title: "UK Governance Standards", desc: "Our advisory framework is anchored in UK NHS, healthcare, and corporate governance principles." },
-    { title: "Independent Representation", desc: "100% objective oversight—we represent your interests exclusively without third-party bias." },
+    { title: "Independent Representation", desc: "100% objective oversight, representing your interests exclusively without third-party bias." },
     { title: "Structured Progress Reporting", desc: "Receive transparent audit logs, site photos, video updates, and financial verification." },
     { title: "Cross-Border Footprint", desc: "Seamless coordination across Southern Africa and the UK to bridge distance and eliminate risk." }
   ];
@@ -59,17 +59,17 @@ const TrustBanner = () => {
                 href="https://wa.me/447449573231" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-[#25D366] text-white py-4.5 rounded-xl font-bold text-sm hover:bg-[#20ba5a] transition-all uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-[#25D366]/20"
+                className="bg-[#25D366] text-white py-4 rounded-xl font-bold text-sm hover:bg-[#20ba5a] transition-all uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-[#25D366]/20 cursor-pointer"
               >
                 <FaWhatsapp className="text-xl" />
-                Direct WhatsApp Advisory (+44 7449 573231)
+                <span>WhatsApp Advisory Desk</span>
               </a>
               <a 
-                href="tel:+263785770586" 
+                href="tel:+447449573231" 
                 className="bg-[#1E2A38] text-white py-3.5 rounded-xl font-medium text-xs hover:bg-[#B6924A] hover:text-[#1E2A38] transition-all uppercase tracking-wider flex items-center justify-center gap-2"
               >
                 <span className="material-symbols-outlined text-sm">call</span>
-                +263 78 577 0586
+                <span>+44 7449 573231</span>
               </a>
             </div>
           </div>

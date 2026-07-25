@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa";
 import TrustBanner from "../components/home/TrustBanner";
 import FeaturedPillar from "../components/home/FeaturedPillar";
+import HomeCTA from "../components/home/HomeCTA";
 
 const WhoWeSupport = () => {
   return (
@@ -47,7 +49,7 @@ const WhoWeSupport = () => {
           </motion.div>
         </div>
 
-        <div className="max-w-7xl mx-auto relative z-10 space-y-4">
+        <div className="max-w-7xl mx-auto relative z-10 space-y-6">
           <div className="inline-flex items-center gap-2 text-[#B6924A] text-xs font-semibold uppercase tracking-widest bg-[#B6924A]/10 px-4 py-1.5 rounded-full border border-[#B6924A]/20">
             <span className="material-symbols-outlined text-sm">groups</span>
             Client Representation
@@ -60,11 +62,24 @@ const WhoWeSupport = () => {
           <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto font-light leading-relaxed">
             Acting as trusted eyes and ears on the ground for overseas investors, commercial entities, diaspora families, and international health & social care organizations.
           </p>
+
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+            <a 
+              href="https://wa.me/447449573231" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-sm hover:bg-[#20ba5a] transition-all uppercase tracking-wider flex items-center gap-2.5 shadow-xl shadow-[#25D366]/20"
+            >
+              <FaWhatsapp className="text-xl" />
+              <span>Connect on WhatsApp (+44 7449 573231)</span>
+            </a>
+          </div>
         </div>
       </section>
 
       <FeaturedPillar />
       <TrustBanner />
+      <HomeCTA />
     </div>
   );
 };

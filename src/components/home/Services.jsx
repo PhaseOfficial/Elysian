@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import africanCarerImg from "../../assets/african carer with african elderly man.png";
 import internationalCareImg from "../../assets/carer with an elderly white couple.png";
 import projectAuditImg from "../../assets/d3.png";
+import verificationOnSiteImg from "../../assets/verification on site.png";
 import carerTeamImg from "../../assets/carer team.png";
 import carerElderlyManImg from "../../assets/carerer with elderly man.png";
 import carerElderlyWomanImg from "../../assets/carer with elderly woman.png";
@@ -29,7 +30,7 @@ const Services = () => {
     {
       title: "Building & Business Monitoring",
       category: "On-Ground Audits",
-      image: projectAuditImg,
+      image: verificationOnSiteImg,
       icon: "domain",
       desc: "Whether constructing commercial property, residential developments, or launching a new venture, our on-ground teams conduct physical site inspections, contractor verification, and progress audits with uncompromised accuracy."
     },

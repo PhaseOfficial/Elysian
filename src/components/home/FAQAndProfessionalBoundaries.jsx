@@ -12,7 +12,7 @@ const FAQAndProfessionalBoundaries = () => {
     },
     {
       question: "How is reporting delivered and how frequently?",
-      answer: "We provide secure, timestamped reports with geotagged evidence via our client portal. Frequency is tailored to client needs—ranging from real-time alerts for critical events to weekly, monthly, or quarterly comprehensive updates."
+      answer: "We provide secure, timestamped reports with geotagged evidence via our client portal. Frequency is tailored to client needs, ranging from real-time alerts for critical events to weekly, monthly, or quarterly comprehensive updates."
     },
     {
       question: "What qualifications do your on-ground representatives have?",
