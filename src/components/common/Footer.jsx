@@ -45,15 +45,13 @@ const Footer = () => {
         </div>
 
         <div className="space-y-4">
-          <h3 className="text-sm font-bold text-[#B6924A] uppercase tracking-wider">Services & Navigation</h3>
+          <h3 className="text-sm font-bold text-[#B6924A] uppercase tracking-wider">Navigation</h3>
           <ul className="space-y-2 text-xs text-white/70 font-light">
             <li><Link to="/" className="hover:text-white transition-colors">Home</Link></li>
-            <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
-            <li><Link to="/healthcare" className="hover:text-white transition-colors">Healthcare Consultancy</Link></li>
-            <li><Link to="/business" className="hover:text-white transition-colors">Business Consultancy</Link></li>
-            <li><Link to="/diaspora" className="hover:text-white transition-colors">Diaspora Support Services</Link></li>
-            <li><Link to="/homecare" className="hover:text-white transition-colors">Homecare Support</Link></li>
-            <li><Link to="/insights" className="hover:text-white transition-colors">Insights & Governance</Link></li>
+            <li><Link to="/about" className="hover:text-white transition-colors">About</Link></li>
+            <li><Link to="/services" className="hover:text-white transition-colors">Services</Link></li>
+            <li><Link to="/who-we-support" className="hover:text-white transition-colors">Who We Support</Link></li>
+            <li><Link to="/our-approach" className="hover:text-white transition-colors">Our Approach</Link></li>
             <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
           </ul>
         </div>

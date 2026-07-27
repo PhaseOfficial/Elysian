@@ -46,8 +46,8 @@ const Hero = ({ fadeInUp, staggerContainer, floatAnimation }) => {
               SPEAK TO OUR TEAM
               <span className="material-symbols-outlined text-sm">arrow_forward</span>
             </Link>
-            <Link to="/diaspora" className="border border-white/30 text-white px-8 py-4 rounded-xl font-medium text-base hover:bg-white/10 transition-all flex items-center gap-3">
-              DIASPORA SERVICES
+            <Link to="/our-approach" className="border border-white/30 text-white px-8 py-4 rounded-xl font-medium text-base hover:bg-white/10 transition-all flex items-center gap-3">
+              OUR APPROACH
               <span className="material-symbols-outlined text-sm">visibility</span>
             </Link>
           </motion.div>

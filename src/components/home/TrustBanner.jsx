@@ -5,10 +5,13 @@ import carerElderlyWomanImg from "../../assets/carer with elderly woman.png";
 
 const TrustBanner = () => {
   const trustItems = [
-    { title: "UK Governance Standards", desc: "Our advisory framework is anchored in UK NHS, healthcare, and corporate governance principles." },
-    { title: "Independent Representation", desc: "100% objective oversight, representing your interests exclusively without third-party bias." },
-    { title: "Structured Progress Reporting", desc: "Receive transparent audit logs, site photos, video updates, and financial verification." },
-    { title: "Cross-Border Footprint", desc: "Seamless coordination across Southern Africa and the UK to bridge distance and eliminate risk." }
+    { title: "UK Leadership & Standards", desc: "Anchored in UK NHS, healthcare, and corporate governance principles." },
+    { title: "International Experience", desc: "Decades of cross-border experience connecting the UK, Europe, and Southern Africa." },
+    { title: "Professional Expertise", desc: "Led by Jean Sigauke (Registered Nurse & Biomedical Scientist)." },
+    { title: "Ethical Governance", desc: "100% independent representation, acting exclusively on behalf of our clients." },
+    { title: "Transparent Reporting", desc: "Comprehensive audit logs, site photos, video proof, and financial verification." },
+    { title: "Cross-Border Partnerships", desc: "Bridging institutions, healthcare providers, investors, and families." },
+    { title: "Personalised Client Support", desc: "Tailored advisory and dedicated representation built around your specific goals." }
   ];
 
   return (
@@ -19,21 +22,21 @@ const TrustBanner = () => {
         <div className="lg:col-span-7 space-y-8">
           <div className="inline-flex items-center gap-2 text-[#B6924A] text-xs font-semibold uppercase tracking-widest bg-[#B6924A]/10 px-4 py-1.5 rounded-full border border-[#B6924A]/20">
             <span className="material-symbols-outlined text-sm">verified_user</span>
-            Uncompromised Integrity
+            Why Choose Elysian Consulting
           </div>
           
           <h2 className="text-3xl md:text-5xl font-bold leading-tight tracking-tight">
-            Why Overseas Clients & Diaspora Families Trust <span className="text-[#B6924A] italic">Elysian</span>
+            An International Professional Services <span className="text-[#B6924A] italic">Organisation</span>
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {trustItems.map((item, i) => (
-              <div key={i} className="flex gap-4 p-5 rounded-2xl bg-[#16222F] border border-white/10">
-                <div className="w-8 h-8 rounded-xl bg-[#B6924A] flex-shrink-0 flex items-center justify-center text-[#1E2A38]">
-                  <span className="material-symbols-outlined text-sm font-bold">check</span>
+              <div key={i} className="flex gap-3.5 p-4.5 rounded-2xl bg-[#16222F] border border-white/10">
+                <div className="w-7 h-7 rounded-lg bg-[#B6924A] flex-shrink-0 flex items-center justify-center text-[#1E2A38] mt-0.5">
+                  <span className="material-symbols-outlined text-xs font-bold">check</span>
                 </div>
-                <div className="space-y-1">
-                  <h4 className="text-base font-bold text-white tracking-wide">{item.title}</h4>
+                <div className="space-y-0.5">
+                  <h4 className="text-sm font-bold text-white tracking-wide">{item.title}</h4>
                   <p className="text-xs text-white/70 leading-relaxed font-light">{item.desc}</p>
                 </div>
               </div>

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Hero from "../components/home/Hero";
 import Services from "../components/home/Services";
+import HealthServicesSection from "../components/home/HealthServicesSection";
 import TrustStrip from "../components/home/TrustStrip";
 import FeaturedPillar from "../components/home/FeaturedPillar";
 import Methodology from "../components/home/Methodology";
@@ -106,6 +107,7 @@ const Home = () => {
       <TrustStrip />
       <FeaturedPillar />
       <Services />
+      <HealthServicesSection />
       <Methodology />
       <BrandStory />
       <FAQAndProfessionalBoundaries />
