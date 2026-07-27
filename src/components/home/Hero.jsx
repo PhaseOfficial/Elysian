@@ -43,11 +43,11 @@ const Hero = ({ fadeInUp, staggerContainer, floatAnimation }) => {
 
           <motion.div variants={fadeInUp} className="flex flex-wrap gap-4 pt-4 justify-center lg:justify-start">
             <Link to="/contact" className="bg-[#B6924A] text-[#1E2A38] px-8 py-4 rounded-xl font-bold text-base shadow-xl hover:bg-white transition-all flex items-center gap-3">
-              BOOK A CONSULTATION
+              SPEAK TO OUR TEAM
               <span className="material-symbols-outlined text-sm">arrow_forward</span>
             </Link>
-            <Link to="/services" className="border border-white/30 text-white px-8 py-4 rounded-xl font-medium text-base hover:bg-white/10 transition-all flex items-center gap-3">
-              EXPLORE OUR SERVICES
+            <Link to="/diaspora" className="border border-white/30 text-white px-8 py-4 rounded-xl font-medium text-base hover:bg-white/10 transition-all flex items-center gap-3">
+              DIASPORA SERVICES
               <span className="material-symbols-outlined text-sm">visibility</span>
             </Link>
           </motion.div>

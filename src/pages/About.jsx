@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import BrandStory from "../components/home/BrandStory";
 import Certification from "../components/home/Certification";
+import founderImg from "../assets/gin proffessional photo.jpeg";
+import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -63,6 +66,82 @@ const About = () => {
         </div>
       </section>
 
+      {/* Founder Leadership Profile Spotlight */}
+      <section className="py-20 px-6 md:px-12 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="lg:col-span-5 relative">
+            <div className="rounded-3xl overflow-hidden shadow-2xl border-2 border-[#B6924A]/40 bg-[#1E2A38] relative h-[420px] md:h-[480px]">
+              <img src={founderImg} alt="Jean Sigauke - Founder & Managing Director" className="w-full h-full object-cover object-top" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1E2A38]/90 via-transparent to-transparent"></div>
+              <div className="absolute bottom-6 left-6 right-6 p-4 bg-[#1E2A38]/90 backdrop-blur-md rounded-2xl border border-[#B6924A]/30 text-center">
+                <h3 className="text-lg font-bold text-[#B6924A]">Jean Sigauke</h3>
+                <p className="text-xs text-white/80 uppercase tracking-widest font-light">Founder & Managing Director</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:col-span-7 space-y-6">
+            <div className="inline-flex items-center gap-2 text-[#B6924A] text-xs font-semibold uppercase tracking-widest bg-[#B6924A]/10 px-4 py-1.5 rounded-full border border-[#B6924A]/20">
+              <span className="material-symbols-outlined text-sm">badge</span>
+              Executive Leadership Profile
+            </div>
+
+            <h2 className="text-3xl md:text-4xl font-bold text-[#1E2A38] leading-tight">
+              Clinical Excellence, Entrepreneurial Leadership & International Vision
+            </h2>
+
+            <div className="flex flex-wrap gap-2 pt-1">
+              {[
+                "Registered Nurse (RN)",
+                "Biomedical Scientist",
+                "Entrepreneur",
+                "International Healthcare Specialist",
+                "UK NHS Governance Leader"
+              ].map((badge, idx) => (
+                <span key={idx} className="bg-[#1E2A38] text-white px-3.5 py-1.5 rounded-xl text-xs font-semibold tracking-wide border border-white/10 shadow-sm">
+                  ✓ {badge}
+                </span>
+              ))}
+            </div>
+
+            <p className="text-gray-600 text-base font-light leading-relaxed">
+              With extensive healthcare leadership and operational development experience built in the United Kingdom, Jean Sigauke leads Elysian Consulting Ltd with an uncompromised commitment to clinical governance, operational efficiency, and ethical accountability.
+            </p>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-gray-100">
+              <div className="space-y-1">
+                <span className="text-3xl font-bold text-[#B6924A]">Decades</span>
+                <p className="text-xs text-gray-500 font-light uppercase tracking-wider">Clinical & Healthcare Leadership</p>
+              </div>
+              <div className="space-y-1">
+                <span className="text-3xl font-bold text-[#1E2A38]">UK & S. Africa</span>
+                <p className="text-xs text-gray-500 font-light uppercase tracking-wider">Cross-Border Footprint</p>
+              </div>
+              <div className="space-y-1">
+                <span className="text-3xl font-bold text-[#B6924A]">100%</span>
+                <p className="text-xs text-gray-500 font-light uppercase tracking-wider">Independent Representation</p>
+              </div>
+            </div>
+
+            <div className="pt-4 flex flex-wrap gap-4">
+              <Link to="/contact" className="bg-[#1E2A38] text-white px-6 py-3.5 rounded-xl font-bold text-xs hover:bg-[#B6924A] hover:text-[#1E2A38] transition-all uppercase tracking-wider flex items-center gap-2">
+                <span>Speak to Jean Sigauke</span>
+                <span className="material-symbols-outlined text-sm">arrow_forward</span>
+              </Link>
+              <a 
+                href="https://wa.me/447984937336" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-[#25D366] text-white px-6 py-3.5 rounded-xl font-bold text-xs hover:bg-[#20ba5a] transition-all uppercase tracking-wider flex items-center gap-2"
+              >
+                <FaWhatsapp className="text-lg" />
+                <span>WhatsApp Advisory</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <BrandStory />
       <Certification />
     </div>
@@ -70,3 +149,4 @@ const About = () => {
 };
 
 export default About;
+

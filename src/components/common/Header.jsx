@@ -75,7 +75,7 @@ const Header = () => {
         </div>
         
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
+        <nav className="hidden lg:flex items-center gap-1 xl:gap-1.5 text-xs font-semibold">
           <NavLink to="/" className={linkClasses} end>
             Home
           </NavLink>
@@ -85,11 +85,20 @@ const Header = () => {
           <NavLink to="/services" className={linkClasses}>
             Services
           </NavLink>
-          <NavLink to="/who-we-support" className={linkClasses}>
-            Who We Support
+          <NavLink to="/healthcare" className={linkClasses}>
+            Healthcare
           </NavLink>
-          <NavLink to="/our-approach" className={linkClasses}>
-            Our Approach
+          <NavLink to="/business" className={linkClasses}>
+            Business
+          </NavLink>
+          <NavLink to="/diaspora" className={linkClasses}>
+            Diaspora Services
+          </NavLink>
+          <NavLink to="/homecare" className={linkClasses}>
+            Homecare
+          </NavLink>
+          <NavLink to="/insights" className={linkClasses}>
+            Insights
           </NavLink>
           <NavLink to="/contact" className={linkClasses}>
             Contact
@@ -146,7 +155,27 @@ const Header = () => {
                   <span className="material-symbols-outlined text-sm text-[#B6924A]">chevron_right</span>
                 </NavLink>
                 <NavLink to="/services" className={mobileLinkClasses} onClick={toggleMenu}>
-                  Services
+                  Services Overview
+                  <span className="material-symbols-outlined text-sm text-[#B6924A]">chevron_right</span>
+                </NavLink>
+                <NavLink to="/healthcare" className={mobileLinkClasses} onClick={toggleMenu}>
+                  Healthcare Consultancy
+                  <span className="material-symbols-outlined text-sm text-[#B6924A]">chevron_right</span>
+                </NavLink>
+                <NavLink to="/business" className={mobileLinkClasses} onClick={toggleMenu}>
+                  Business Consultancy
+                  <span className="material-symbols-outlined text-sm text-[#B6924A]">chevron_right</span>
+                </NavLink>
+                <NavLink to="/diaspora" className={mobileLinkClasses} onClick={toggleMenu}>
+                  Diaspora Support Services
+                  <span className="material-symbols-outlined text-sm text-[#B6924A]">chevron_right</span>
+                </NavLink>
+                <NavLink to="/homecare" className={mobileLinkClasses} onClick={toggleMenu}>
+                  Homecare Support
+                  <span className="material-symbols-outlined text-sm text-[#B6924A]">chevron_right</span>
+                </NavLink>
+                <NavLink to="/insights" className={mobileLinkClasses} onClick={toggleMenu}>
+                  Insights & Governance
                   <span className="material-symbols-outlined text-sm text-[#B6924A]">chevron_right</span>
                 </NavLink>
                 <NavLink to="/who-we-support" className={mobileLinkClasses} onClick={toggleMenu}>

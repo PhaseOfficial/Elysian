@@ -5,6 +5,11 @@ import Collection from "./pages/Collection";
 import WhoWeSupport from "./pages/WhoWeSupport";
 import OurApproach from "./pages/OurApproach";
 import Contact from "./pages/Contact";
+import Healthcare from "./pages/Healthcare";
+import Business from "./pages/Business";
+import DiasporaServices from "./pages/DiasporaServices";
+import HomecareSupport from "./pages/HomecareSupport";
+import Insights from "./pages/Insights";
 import ProductDetail from "./pages/ProductDetail";
 import Profile from "./pages/Profile";
 import Voice from "./pages/Voice";
@@ -31,6 +36,11 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Collection />} />
+          <Route path="/healthcare" element={<Healthcare />} />
+          <Route path="/business" element={<Business />} />
+          <Route path="/diaspora" element={<DiasporaServices />} />
+          <Route path="/homecare" element={<HomecareSupport />} />
+          <Route path="/insights" element={<Insights />} />
           <Route path="/who-we-support" element={<WhoWeSupport />} />
           <Route path="/our-approach" element={<OurApproach />} />
           <Route path="/contact" element={<Contact />} />
