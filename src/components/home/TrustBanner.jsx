@@ -56,7 +56,7 @@ const TrustBanner = () => {
             
             <div className="flex flex-col gap-3 pt-2">
               <a 
-                href="https://wa.me/447449573231" 
+                href="https://wa.me/447984937336" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-[#25D366] text-white py-4 rounded-xl font-bold text-sm hover:bg-[#20ba5a] transition-all uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-[#25D366]/20 cursor-pointer"
@@ -65,11 +65,11 @@ const TrustBanner = () => {
                 <span>WhatsApp Advisory Desk</span>
               </a>
               <a 
-                href="tel:+447449573231" 
+                href="tel:+447984937336" 
                 className="bg-[#1E2A38] text-white py-3.5 rounded-xl font-medium text-xs hover:bg-[#B6924A] hover:text-[#1E2A38] transition-all uppercase tracking-wider flex items-center justify-center gap-2"
               >
                 <span className="material-symbols-outlined text-sm">call</span>
-                <span>+44 7449 573231</span>
+                <span>+44 7984 937336</span>
               </a>
             </div>
           </div>

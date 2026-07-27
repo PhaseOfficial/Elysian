@@ -65,13 +65,13 @@ const WhoWeSupport = () => {
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
             <a 
-              href="https://wa.me/447449573231" 
+              href="https://wa.me/447984937336" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-sm hover:bg-[#20ba5a] transition-all uppercase tracking-wider flex items-center gap-2.5 shadow-xl shadow-[#25D366]/20"
             >
               <FaWhatsapp className="text-xl" />
-              <span>Connect on WhatsApp (+44 7449 573231)</span>
+              <span>Connect on WhatsApp (+44 7984 937336)</span>
             </a>
           </div>
         </div>

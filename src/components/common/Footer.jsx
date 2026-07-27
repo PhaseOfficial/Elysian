@@ -21,11 +21,11 @@ const Footer = () => {
 
           <div className="flex items-center gap-3 pt-2">
             <a 
-              href="https://wa.me/447449573231" 
+              href="https://wa.me/447984937336" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-xl bg-[#25D366] text-white flex items-center justify-center hover:scale-105 transition-all shadow-md"
-              title="Chat on WhatsApp (+44 7449 573231)"
+              title="Chat on WhatsApp (+44 7984 937336)"
             >
               <FaWhatsapp size={20} />
             </a>
@@ -69,11 +69,11 @@ const Footer = () => {
             </li>
             <li className="flex items-center gap-2 pt-2">
               <FaWhatsapp className="text-[#25D366] text-base" />
-              <a href="https://wa.me/447449573231" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366] transition-colors font-medium text-[#25D366]">WhatsApp: +44 7449 573231</a>
+              <a href="https://wa.me/447984937336" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366] transition-colors font-medium text-[#25D366]">WhatsApp: +44 7984 937336</a>
             </li>
             <li className="flex items-center gap-2">
               <span className="material-symbols-outlined text-[#B6924A] text-sm">call</span>
-              <a href="tel:+447449573231" className="hover:text-white transition-colors">+44 7449 573231</a>
+              <a href="tel:+447984937336" className="hover:text-white transition-colors">+44 7984 937336</a>
             </li>
           </ul>
         </div>

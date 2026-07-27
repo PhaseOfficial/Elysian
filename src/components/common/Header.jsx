@@ -37,7 +37,7 @@ const Header = () => {
         <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0 pl-2">
           <span className="hidden lg:inline text-white/60 font-light">Your Trusted Eyes & Ears on the Ground</span>
           <a 
-            href="https://wa.me/447449573231" 
+            href="https://wa.me/447984937336" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="flex items-center gap-1 sm:gap-1.5 text-[#25D366] hover:text-white transition-colors font-bold whitespace-nowrap"
@@ -165,7 +165,7 @@ const Header = () => {
 
               <div className="mt-auto space-y-3 pt-6 border-t border-white/10">
                 <a 
-                  href="https://wa.me/447449573231" 
+                  href="https://wa.me/447984937336" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   onClick={toggleMenu}

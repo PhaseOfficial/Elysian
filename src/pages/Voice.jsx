@@ -68,7 +68,7 @@ const Voice = () => {
           className="bg-[#1E2A38] text-white p-10 rounded-3xl text-center space-y-4 relative overflow-hidden shadow-2xl border border-white/20"
         >
            <h3 className="text-xl uppercase tracking-widest text-[#B6924A] font-bold">Direct International Advisory Desk</h3>
-           <a href="https://wa.me/447449573231" target="_blank" rel="noopener noreferrer" className="text-3xl md:text-4xl font-bold text-white block hover:text-[#25D366] transition-all">+44 7449 573231</a>
+           <a href="https://wa.me/447984937336" target="_blank" rel="noopener noreferrer" className="text-3xl md:text-4xl font-bold text-white block hover:text-[#25D366] transition-all">+44 7984 937336</a>
            <p className="text-xs text-white/60 uppercase tracking-widest font-light">Available for Cross-Border Advisory & Urgent Inquiries</p>
         </motion.div>
       </div>

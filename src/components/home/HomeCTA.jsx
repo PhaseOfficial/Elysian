@@ -25,7 +25,7 @@ const HomeCTA = () => {
 
           <div className="flex flex-col sm:flex-row justify-center gap-4 pt-6">
             <a 
-              href="https://wa.me/447449573231" 
+              href="https://wa.me/447984937336" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-base hover:bg-[#20ba5a] transition-all shadow-xl shadow-[#25D366]/20 flex items-center justify-center gap-2"

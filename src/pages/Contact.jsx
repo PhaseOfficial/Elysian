@@ -28,7 +28,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    const phoneNumber = "447449573231";
+    const phoneNumber = "447984937336";
     const text = `*Consultation Request - Elysian Consulting Ltd*%0A%0A` +
                  `*Name:* ${formData.name}%0A` +
                  `*Email:* ${formData.email}%0A` +
@@ -129,7 +129,7 @@ const Contact = () => {
                 <div className="space-y-1">
                   <h3 className="text-base font-bold text-[#1E2A38] uppercase">Direct Advisory Line</h3>
                   <p className="text-xs text-gray-500 font-light">Call for consultation or rapid on-ground response.</p>
-                  <a href="tel:+447449573231" className="text-lg font-bold text-[#1E2A38] hover:text-[#B6924A] transition-colors block pt-1">+44 7449 573231</a>
+                  <a href="tel:+447984937336" className="text-lg font-bold text-[#1E2A38] hover:text-[#B6924A] transition-colors block pt-1">+44 7984 937336</a>
                 </div>
               </motion.div>
 
@@ -140,9 +140,9 @@ const Contact = () => {
                 <div className="space-y-1">
                   <h3 className="text-base font-bold text-[#1E2A38] uppercase">WhatsApp Advisory Desk</h3>
                   <p className="text-xs text-gray-500 font-light">Instant messaging for international clients.</p>
-                  <a href="https://wa.me/447449573231" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-[#25D366] hover:underline flex items-center gap-1.5 pt-1">
+                  <a href="https://wa.me/447984937336" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-[#25D366] hover:underline flex items-center gap-1.5 pt-1">
                     <FaWhatsapp className="text-base" />
-                    <span>Chat Directly (+44 7449 573231)</span>
+                    <span>Chat Directly (+44 7984 937336)</span>
                   </a>
                 </div>
               </motion.div>

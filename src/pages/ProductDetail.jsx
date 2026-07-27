@@ -87,7 +87,7 @@ const ProductDetail = () => {
                <Link to="/contact" className="flex-1 bg-[#1E2A38] text-white py-4 rounded-xl font-bold text-sm text-center hover:bg-[#B6924A] hover:text-[#1E2A38] transition-all shadow-lg">
                   BOOK CONSULTATION
                </Link>
-               <a href="https://wa.me/447449573231" target="_blank" rel="noopener noreferrer" className="flex-1 bg-[#25D366] text-white py-4 rounded-xl font-bold text-sm text-center hover:bg-[#20ba5a] transition-all shadow-lg flex items-center justify-center gap-2">
+               <a href="https://wa.me/447984937336" target="_blank" rel="noopener noreferrer" className="flex-1 bg-[#25D366] text-white py-4 rounded-xl font-bold text-sm text-center hover:bg-[#20ba5a] transition-all shadow-lg flex items-center justify-center gap-2">
                   <span>WHATSAPP ADVISORY</span>
                </a>
             </div>
