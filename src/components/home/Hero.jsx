@@ -32,13 +32,17 @@ const Hero = ({ fadeInUp, staggerContainer, floatAnimation }) => {
             </span>
             UNITED KINGDOM LEADERSHIP & GOVERNANCE STANDARDS
           </motion.div>
+
+          <motion.div variants={fadeInUp} className="text-[#B6924A] font-semibold text-xs md:text-sm uppercase tracking-widest">
+            International Standards • Independent Oversight • Local Execution
+          </motion.div>
           
           <motion.h1 variants={fadeInUp} className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.15]">
-            International Standards. Independent Oversight. Local Execution.
+            Professional Services Across Borders
           </motion.h1>
 
-          <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/80 max-w-2xl leading-relaxed mx-auto lg:mx-0 font-light">
-            Your Trusted Eyes and Ears on the Ground in Southern Africa & Europe. Combining UK healthcare, governance, and leadership standards with in-country execution for overseas investors, businesses, and diaspora families.
+          <motion.p variants={fadeInUp} className="text-lg md:text-xl text-white/80 max-w-3xl leading-relaxed mx-auto lg:mx-0 font-light">
+            An international professional services organisation providing consultancy, project oversight, healthcare advisory, business support and trusted local representation across Southern Africa and Europe, combining UK leadership, governance and professional expertise with dependable in-country execution.
           </motion.p>
 
           <motion.div variants={fadeInUp} className="flex flex-wrap gap-4 pt-4 justify-center lg:justify-start">

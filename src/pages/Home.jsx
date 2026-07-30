@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import Hero from "../components/home/Hero";
-import Services from "../components/home/Services";
-import HealthServicesSection from "../components/home/HealthServicesSection";
 import TrustStrip from "../components/home/TrustStrip";
 import FeaturedPillar from "../components/home/FeaturedPillar";
-import Methodology from "../components/home/Methodology";
+import WhyElysian from "../components/home/WhyElysian";
+import Services from "../components/home/Services";
+import IndustriesWeSupport from "../components/home/IndustriesWeSupport";
 import BrandStory from "../components/home/BrandStory";
+import Certification from "../components/home/Certification";
 import FAQAndProfessionalBoundaries from "../components/home/FAQAndProfessionalBoundaries";
 import HomeCTA from "../components/home/HomeCTA";
 
@@ -46,9 +47,8 @@ const Home = () => {
 
   return (
     <div className="bg-background text-on-surface font-body-md overflow-x-hidden relative">
-      {/* Global Background Animations - Professional Advisory & Governance Icons */}
+      {/* Global Background Animations */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-        {/* Floating Industry Icons */}
         {[
           { icon: "public", top: "15%", left: "8%", size: "40px" },
           { icon: "verified_user", top: "35%", left: "88%", size: "55px" },
@@ -81,7 +81,6 @@ const Home = () => {
           </motion.div>
         ))}
 
-        {/* Large Subtle Governance Emblem (Background) */}
         <motion.div 
           {...floatAnimation} 
           className="absolute top-[25%] right-[5%] text-[#1E2A38] opacity-[0.03]"
@@ -106,10 +105,11 @@ const Home = () => {
 
       <TrustStrip />
       <FeaturedPillar />
+      <WhyElysian />
       <Services />
-      <HealthServicesSection />
-      <Methodology />
+      <IndustriesWeSupport />
       <BrandStory />
+      <Certification />
       <FAQAndProfessionalBoundaries />
       <HomeCTA />
     </div>
