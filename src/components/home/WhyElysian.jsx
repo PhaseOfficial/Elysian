@@ -18,24 +18,31 @@ const WhyElysian = () => {
     },
     {
       number: "03",
-      title: "UK Leadership",
-      subtitle: "Applying UK governance, professionalism and quality assurance principles.",
+      title: "UK Leadership & Expertise",
+      subtitle: "Applying UK leadership, governance and professional experience to deliver high-quality services and best practice.",
       desc: "Steered by UK healthcare & governance standards to ensure institutional rigor and strict compliance.",
       icon: "verified"
     },
     {
       number: "04",
       title: "Local Expertise",
-      subtitle: "Reliable support delivered by trusted professionals on the ground.",
+      subtitle: "Combining local understanding with international perspectives to navigate cultural, operational and regulatory environments effectively.",
       desc: "Experienced local teams with deep regulatory, construction, business, and healthcare context across Southern Africa.",
       icon: "location_city"
     },
     {
       number: "05",
       title: "Cross-Border Expertise",
-      subtitle: "Supporting clients across Southern Africa and Europe.",
+      subtitle: "Connecting overseas investors, organisations and diaspora families with trusted local expertise through seamless communication and dependable support.",
       desc: "Seamless communication and operational bridge linking overseas investors and diaspora families with local operations.",
       icon: "public"
+    },
+    {
+      number: "06",
+      title: "Tailored Solutions",
+      subtitle: "Every client is unique.",
+      desc: "We take the time to understand your goals and deliver bespoke solutions that meet your specific needs, whether you&apos;re managing a project, supporting loved ones or expanding your business.",
+      icon: "tune"
     }
   ];
 

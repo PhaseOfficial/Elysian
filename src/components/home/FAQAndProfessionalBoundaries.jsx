@@ -1,6 +1,11 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
+import PropTypes from "prop-types";
+import { motion, AnimatePresence } from "framer-motion";
 
 const FAQAndProfessionalBoundaries = () => {
+  const [openFaq, setOpenFaq] = useState(null);
+  const [openBoundary, setOpenBoundary] = useState(null);
+
   const faqItems = [
     {
       question: "How do you ensure independence and objectivity?",
@@ -20,6 +25,64 @@ const FAQAndProfessionalBoundaries = () => {
     }
   ];
 
+  const boundaries = [
+    {
+      icon: "shield",
+      title: "Independence & Objectivity",
+      desc: "We maintain complete operational and financial independence from the subjects of our oversight. Our findings are based solely on verifiable evidence collected through systematic, transparent methodologies."
+    },
+    {
+      icon: "privacy_tip",
+      title: "Confidentiality & Data Protection",
+      desc: "All client information and engagement details are handled with the strictest confidentiality. We employ industry-standard data protection measures to safeguard sensitive information throughout our engagement lifecycle."
+    },
+    {
+      icon: "gavel",
+      title: "Compliance & Legal Adherence",
+      desc: "Our operations comply with relevant international and local regulations. We work within established legal frameworks and maintain transparent communication with appropriate authorities when required by law."
+    }
+  ];
+
+  const AccordionRow = ({ item, isOpen, onToggle, icon }) => (
+    <div className="border border-gray-200 rounded-xl overflow-hidden bg-white">
+      <button
+        onClick={onToggle}
+        aria-expanded={isOpen}
+        className="w-full flex justify-between items-center gap-3 p-4 bg-white hover:bg-[#F7F4EE] transition-colors text-left"
+      >
+        <span className="flex items-center gap-3 min-w-0">
+          {icon && <span className="material-symbols-outlined text-[#B6924A] flex-shrink-0">{icon}</span>}
+          <span className="font-semibold text-[#1E2A38] text-sm pr-2">{item.question || item.title}</span>
+        </span>
+        <span className={`material-symbols-outlined text-[#B6924A] flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}>
+          expand_more
+        </span>
+      </button>
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.25, ease: "easeInOut" }}
+            style={{ overflow: "hidden" }}
+          >
+            <p className="px-4 pb-4 pt-1 text-gray-700 text-sm leading-relaxed border-t border-gray-100">
+              {item.answer || item.desc}
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+
+  AccordionRow.propTypes = {
+    item: PropTypes.object.isRequired,
+    isOpen: PropTypes.bool,
+    onToggle: PropTypes.func.isRequired,
+    icon: PropTypes.string
+  };
+
   return (
     <motion.div
       initial={{ y: 20, opacity: 0 }}
@@ -29,68 +92,71 @@ const FAQAndProfessionalBoundaries = () => {
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-8">
-          {/* FAQ Section */}
+          {/* FAQ Section - Accordion */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#1E2A38] mb-6">
-              Frequently Asked Questions
-            </h2>
-            <div className="space-y-4">
-              {faqItems.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ y: 10, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ delay: index * 0.05, duration: 0.5 }}
-                  className="border-b border-gray-200 pb-4 last:border-b-0"
-                >
-                  <div className="flex justify-between items-start mb-2 cursor-pointer hover:text-[#B6924A] transition-colors">
-                    <h3 className="font-semibold text-[#1E2A38]">{item.question}</h3>
-                    <span className="material-symbols-outlined text-[#B6924A]">expand_more</span>
-                  </div>
-                  <p className="text-gray-600 text-sm leading-relaxed pl-4">
-                    {item.answer}
-                  </p>
-                </motion.div>
-              ))}
+            <div className="flex items-center justify-between mb-6 flex-wrap gap-3">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#1E2A38]">
+                Frequently Asked Questions
+              </h2>
+              <button
+                onClick={() => setOpenFaq(openFaq === "all" ? null : "all")}
+                className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-[#B6924A] hover:text-[#1E2A38] transition-colors"
+              >
+                <span className="material-symbols-outlined text-sm">
+                  {openFaq === "all" ? "expand_less" : "expand_more"}
+                </span>
+                {openFaq === "all" ? "Collapse All" : "Expand All"}
+              </button>
+            </div>
+            <div className="space-y-2">
+              {faqItems.map((item, index) => {
+                const isOpen = openFaq === "all" || openFaq === index;
+                return (
+                  <AccordionRow
+                    key={index}
+                    item={item}
+                    index={index}
+                    isOpen={isOpen}
+                    onToggle={() => setOpenFaq(openFaq === index ? null : index)}
+                  />
+                );
+              })}
             </div>
           </div>
 
-          {/* Professional Boundaries Section */}
+          {/* Professional Boundaries Section - Accordion */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#1E2A38] mb-6">
-              Professional Boundaries & Ethics
-            </h2>
-            <p className="text-gray-700 mb-6 leading-relaxed">
+            <div className="flex items-center justify-between mb-6 flex-wrap gap-3">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#1E2A38]">
+                Professional Boundaries & Ethics
+              </h2>
+              <button
+                onClick={() => setOpenBoundary(openBoundary === "all" ? null : "all")}
+                className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-[#B6924A] hover:text-[#1E2A38] transition-colors"
+              >
+                <span className="material-symbols-outlined text-sm">
+                  {openBoundary === "all" ? "expand_less" : "expand_more"}
+                </span>
+                {openBoundary === "all" ? "Collapse All" : "Expand All"}
+              </button>
+            </div>
+            <p className="text-gray-700 mb-4 leading-relaxed">
               Elysian Consulting operates with uncompromising ethical standards and professional boundaries to ensure the integrity of our services. We maintain strict independence in all engagements, avoiding conflicts of interest that could compromise our objectivity or the trust placed in us by our clients.
             </p>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <span className="material-symbols-outlined text-[#B6924A] mt-1 flex-shrink-0">shield</span>
-                <div>
-                  <h3 className="font-semibold text-[#1E2A38]">Independence & Objectivity</h3>
-                  <p className="text-gray-600 text-sm">
-                    We maintain complete operational and financial independence from the subjects of our oversight. Our findings are based solely on verifiable evidence collected through systematic, transparent methodologies.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <span className="material-symbols-outlined text-[#B6924A] mt-1 flex-shrink-0">privacy_tip</span>
-                <div>
-                  <h3 className="font-semibold text-[#1E2A38]">Confidentiality & Data Protection</h3>
-                  <p className="text-gray-600 text-sm">
-                    All client information and engagement details are handled with the strictest confidentiality. We employ industry-standard data protection measures to safeguard sensitive information throughout our engagement lifecycle.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <span className="material-symbols-outlined text-[#B6924A] mt-1 flex-shrink-0">gavel</span>
-                <div>
-                  <h3 className="font-semibold text-[#1E2A38]">Compliance & Legal Adherence</h3>
-                  <p className="text-gray-600 text-sm">
-                    Our operations comply with relevant international and local regulations. We work within established legal frameworks and maintain transparent communication with appropriate authorities when required by law.
-                  </p>
-                </div>
-              </div>
+            <div className="space-y-2">
+              {boundaries.map((item, index) => {
+                const isOpen = openBoundary === "all" || openBoundary === index;
+                return (
+                  <AccordionRow
+                    key={index}
+                    item={item}
+                    index={index}
+                    isOpen={isOpen}
+                    onToggle={() => setOpenBoundary(openBoundary === index ? null : index)}
+                    icon={item.icon}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>

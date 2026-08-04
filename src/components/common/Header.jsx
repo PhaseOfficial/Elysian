@@ -29,17 +29,13 @@ const Header = () => {
             <span className="hidden sm:inline">Southern Africa & United Kingdom</span>
             <span className="sm:hidden">S. Africa & UK</span>
           </span>
-          <span className="hidden md:flex items-center gap-1.5 border-l border-white/20 pl-4 font-medium flex-shrink-0">
-            <span className="material-symbols-outlined text-xs text-[#B6924A]">verified</span>
-            UK Leadership & Governance Standards
-          </span>
         </div>
         <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0 pl-2">
           <span className="hidden lg:inline text-white/60 font-light">Your Trusted Eyes & Ears on the Ground</span>
-          <a 
-            href="https://wa.me/447984937336" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://wa.me/447984937336"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1 sm:gap-1.5 text-[#25D366] hover:text-white transition-colors font-bold whitespace-nowrap"
           >
             <FaWhatsapp className="text-xs sm:text-sm" />
@@ -64,11 +60,11 @@ const Header = () => {
           <Link to="/" className="flex items-center gap-2 sm:gap-3 group min-w-0" onClick={() => setIsMenuOpen(false)}>
             <img src={logo} alt="Elysian Consulting Ltd Logo" className="h-8 sm:h-10 md:h-12 w-auto object-contain flex-shrink-0" />
             <div className="hidden sm:flex flex-col min-w-0">
-              <span className="text-sm sm:text-lg md:text-xl text-[#1E2A38] font-bold tracking-tight uppercase truncate">
-                ELYSIAN CONSULTING
+              <span className="text-base sm:text-lg md:text-xl text-[#1E2A38] font-bold tracking-tight uppercase truncate">
+                Elysian Global
               </span>
-              <span className="text-[9px] sm:text-[10px] text-[#B6924A] font-semibold tracking-widest uppercase -mt-0.5 truncate">
-                International Advisory
+              <span className="text-[10px] sm:text-xs text-[#B6924A] font-semibold tracking-widest -mt-0.5 truncate">
+                Professional Services Across Borders
               </span>
             </div>
           </Link>
@@ -85,11 +81,11 @@ const Header = () => {
           <NavLink to="/services" className={linkClasses}>
             Services
           </NavLink>
+          <NavLink to="/healthcare-expertise" className={linkClasses}>
+            Healthcare Expertise
+          </NavLink>
           <NavLink to="/who-we-support" className={linkClasses}>
             Who We Support
-          </NavLink>
-          <NavLink to="/our-approach" className={linkClasses}>
-            Our Approach
           </NavLink>
           <NavLink to="/contact" className={linkClasses}>
             Contact
@@ -149,12 +145,12 @@ const Header = () => {
                   Services
                   <span className="material-symbols-outlined text-sm text-[#B6924A]">chevron_right</span>
                 </NavLink>
-                <NavLink to="/who-we-support" className={mobileLinkClasses} onClick={toggleMenu}>
-                  Who We Support
+                <NavLink to="/healthcare-expertise" className={mobileLinkClasses} onClick={toggleMenu}>
+                  Healthcare Expertise
                   <span className="material-symbols-outlined text-sm text-[#B6924A]">chevron_right</span>
                 </NavLink>
-                <NavLink to="/our-approach" className={mobileLinkClasses} onClick={toggleMenu}>
-                  Our Approach
+                <NavLink to="/who-we-support" className={mobileLinkClasses} onClick={toggleMenu}>
+                  Who We Support
                   <span className="material-symbols-outlined text-sm text-[#B6924A]">chevron_right</span>
                 </NavLink>
                 <NavLink to="/contact" className={mobileLinkClasses} onClick={toggleMenu}>

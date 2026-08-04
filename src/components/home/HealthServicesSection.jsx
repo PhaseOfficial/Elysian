@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 
 // Assets
-import internationalCareImg from "../../assets/carer with an elderly white couple.png";
-import reablementImg from "../../assets/reablement.png";
-import supportedLivingImg from "../../assets/supported-living.png";
-import livingImg from "../../assets/living.png";
-import mentalHealthImg from "../../assets/mental-health.png";
-import africanCarerImg from "../../assets/african carer with african elderly man.png";
-import carerElderlyWomanImg from "../../assets/carer with elderly woman.png";
+import qualityAuditImg from "../../assets/stock/service-quality-audit.jpg";
+import governanceImg from "../../assets/stock/service-governance.jpg";
+import workforceImg from "../../assets/stock/service-workforce.jpg";
+import operationsImg from "../../assets/stock/service-operations.jpg";
+import specialtyImg from "../../assets/stock/service-specialty.jpg";
+import healthcareLiaisonImg from "../../assets/stock/service-healthcare-liaison.jpg";
+import internationalHealthImg from "../../assets/stock/service-international-health.jpg";
 
 const HealthServicesSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -18,7 +18,7 @@ const HealthServicesSection = () => {
   const categories = [
     { id: "all", label: "All Health Services" },
     { id: "governance", label: "Clinical Governance & Audits" },
-    { id: "workforce", label: "Workforce & Leadership" },
+    { id: "workforce", label: "Workforce, Leadership & Partnerships" },
     { id: "specialty", label: "Care Infrastructure & QA" },
     { id: "homecare", label: "Homecare & Family Liaison" }
   ];
@@ -32,7 +32,7 @@ const HealthServicesSection = () => {
       desc: "Systematic evaluation of healthcare operations, care delivery standards, and patient safety protocols benchmarked against UK NHS regulatory frameworks.",
       features: ["Clinical Care Quality Audits", "Patient Safety Protocols", "Continuous Service Evaluation"],
       icon: "verified",
-      img: internationalCareImg
+      img: qualityAuditImg
     },
     {
       id: "clinical-governance",
@@ -42,7 +42,7 @@ const HealthServicesSection = () => {
       desc: "Embedding robust clinical governance structures, policy frameworks, and risk management systems across health and social care institutions.",
       features: ["Clinical Governance Frameworks", "Policy & Procedure Design", "Risk Management Systems"],
       icon: "gavel",
-      img: supportedLivingImg
+      img: governanceImg
     },
     {
       id: "workforce-capacity",
@@ -52,7 +52,17 @@ const HealthServicesSection = () => {
       desc: "Developing healthcare workforce capacity through structured clinical training, leadership coaching, and international best practice implementation.",
       features: ["Clinical Staff Capacity Building", "Healthcare Leadership Coaching", "Standardized Operating Procedures"],
       icon: "groups_3",
-      img: reablementImg
+      img: workforceImg
+    },
+    {
+      id: "international-health-partnerships",
+      category: "workforce",
+      tag: "PARTNERSHIPS & COMMUNITY HEALTH",
+      title: "International Health Partnerships & Community Health",
+      desc: "Facilitating collaboration between healthcare providers, investors, NGOs, governments and communities to strengthen healthcare systems, improve access to care and deliver sustainable health initiatives.",
+      features: ["Multi-Stakeholder Collaboration", "Healthcare System Strengthening", "Sustainable Health Initiatives"],
+      icon: "public",
+      img: internationalHealthImg
     },
     {
       id: "operational-consultancy",
@@ -62,7 +72,7 @@ const HealthServicesSection = () => {
       desc: "Optimizing operational workflows for hospitals, care homes, and clinical providers to enhance service efficiency and regulatory compliance.",
       features: ["Workflow Optimization", "Facility Operational Planning", "Compliance Systems"],
       icon: "settings_suggest",
-      img: livingImg
+      img: operationsImg
     },
     {
       id: "specialty-care-qa",
@@ -72,7 +82,7 @@ const HealthServicesSection = () => {
       desc: "Short-term care support design focusing on client independence, supported living QA audits, and mental health care pathways.",
       features: ["Reablement Services Design", "Supported Living QA", "Mental Health Pathways"],
       icon: "psychology",
-      img: mentalHealthImg
+      img: specialtyImg
     },
     {
       id: "homecare-welfare",
@@ -82,7 +92,7 @@ const HealthServicesSection = () => {
       desc: "Independent welfare monitoring for elderly family members, caregiver accountability checks, doctor & hospital liaison, and emergency care coordination.",
       features: ["Physical Welfare Visits", "Doctor & Hospital Liaison", "Caregiver Quality Audits"],
       icon: "volunteer_activism",
-      img: africanCarerImg
+      img: healthcareLiaisonImg
     }
   ];
 

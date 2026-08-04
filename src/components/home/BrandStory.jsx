@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import founderImg from "../../assets/gin proffessional photo.jpeg";
 import carerTeamImg from "../../assets/carer team.png";
-import missionImg from "../../assets/mission.png";
 
 const BrandStory = () => {
   return (
@@ -67,10 +66,13 @@ const BrandStory = () => {
 
           <div className="space-y-4 text-white/80 font-light leading-relaxed text-base">
             <p>
-              "Elysian Consulting Ltd was born from my desire to use my experience in UK healthcare, leadership, entrepreneurship, and service development to contribute to sustainable progress in Zimbabwe and across the region."
+              &ldquo;Distance should never be a barrier to opportunity, progress or peace of mind. Elysian Global was founded to bridge the gap between international clients and dependable local execution.&rdquo;
             </p>
             <p>
-              "Having built and led organisations in the United Kingdom, I understand the importance of strong systems, trusted partnerships, accountability, and practical implementation. I also understand the challenges faced by people living abroad who want to invest, establish projects, or support family members but need trusted eyes and ears on the ground."
+              &ldquo;Having built and led organisations in the United Kingdom, I understand the importance of strong governance, trusted partnerships, accountability, and practical implementation. I also understand the challenges faced by people living abroad who want to invest, establish projects, or support family members but need trusted eyes and ears on the ground.&rdquo;
+            </p>
+            <p>
+              &ldquo;Every engagement is guided by integrity, professionalism and accountability — because we know that wherever you are in the world, you deserve a partner who protects your interests as if they were our own.&rdquo;
             </p>
           </div>
 

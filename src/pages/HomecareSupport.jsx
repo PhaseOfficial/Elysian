@@ -181,6 +181,29 @@ const HomecareSupport = () => {
         </div>
       </section>
 
+      {/* Cross-link to Healthcare Expertise standalone page */}
+      <section className="py-14 px-6 md:px-12 bg-[#F7F4EE] border-t border-[#B6924A]/20">
+        <div className="max-w-5xl mx-auto bg-[#1E2A38] rounded-3xl p-8 md:p-10 border border-[#B6924A]/30 flex flex-col md:flex-row items-start md:items-center gap-6 shadow-xl">
+          <div className="w-14 h-14 rounded-2xl bg-[#B6924A] text-[#1E2A38] flex items-center justify-center flex-shrink-0">
+            <span className="material-symbols-outlined text-2xl">health_and_safety</span>
+          </div>
+          <div className="flex-1 space-y-2">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-[#B6924A]">Related Service</span>
+            <h3 className="text-xl md:text-2xl font-bold text-white">Looking for Healthcare Specialist Expertise?</h3>
+            <p className="text-white/70 text-sm font-light leading-relaxed">
+              Explore our dedicated <strong className="text-white">Healthcare — Our Specialist Expertise</strong> page for an in-depth view of homecare, family support, welfare visits and care coordination services.
+            </p>
+          </div>
+          <Link
+            to="/healthcare-expertise"
+            className="bg-[#B6924A] text-[#1E2A38] px-6 py-3.5 rounded-xl font-bold text-xs hover:bg-white transition-all uppercase tracking-wider flex items-center gap-2 whitespace-nowrap"
+          >
+            <span>View Specialist Expertise</span>
+            <span className="material-symbols-outlined text-sm">arrow_forward</span>
+          </Link>
+        </div>
+      </section>
+
       {/* CTA Footer */}
       <section className="py-20 px-6 md:px-12 bg-[#1E2A38] text-white text-center">
         <div className="max-w-4xl mx-auto space-y-6">
@@ -192,9 +215,9 @@ const HomecareSupport = () => {
             <Link to="/contact" className="bg-[#B6924A] text-[#1E2A38] px-8 py-4 rounded-xl font-bold text-sm hover:bg-white transition-all uppercase tracking-wider">
               Book a Consultation
             </Link>
-            <a 
-              href="https://wa.me/447984937336" 
-              target="_blank" 
+            <a
+              href="https://wa.me/447984937336"
+              target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-sm hover:bg-[#20ba5a] transition-all flex items-center gap-2 uppercase tracking-wider"
             >

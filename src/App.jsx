@@ -3,9 +3,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Collection from "./pages/Collection";
 import WhoWeSupport from "./pages/WhoWeSupport";
-import OurApproach from "./pages/OurApproach";
+import HealthcareExpertise from "./pages/HealthcareExpertise";
 import Contact from "./pages/Contact";
-import Healthcare from "./pages/Healthcare";
 import Business from "./pages/Business";
 import HomecareSupport from "./pages/HomecareSupport";
 import Insights from "./pages/Insights";
@@ -35,12 +34,11 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Collection />} />
-          <Route path="/healthcare" element={<Healthcare />} />
+          <Route path="/healthcare-expertise" element={<HealthcareExpertise />} />
           <Route path="/business" element={<Business />} />
           <Route path="/homecare" element={<HomecareSupport />} />
           <Route path="/insights" element={<Insights />} />
           <Route path="/who-we-support" element={<WhoWeSupport />} />
-          <Route path="/our-approach" element={<OurApproach />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/profile" element={<Profile />} />

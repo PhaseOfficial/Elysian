@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import verificationOnSiteImg from "../../assets/verification on site.png";
+import verificationImg from "../../assets/stock/service-verification.jpg";
 
 const FeaturedPillar = () => {
   const representativeExamples = [
@@ -50,11 +50,11 @@ const FeaturedPillar = () => {
           </h2>
 
           <h3 className="text-xl md:text-2xl text-[#B6924A] font-semibold tracking-wide">
-            Protecting your interests when you can't be there.
+            Protecting your interests when you can&apos;t be there.
           </h3>
 
           <p className="text-gray-700 text-base md:text-lg font-light leading-relaxed pt-2">
-            Whether you're managing a construction project, overseeing a business, supporting loved ones or investing from overseas, Elysian Global acts as your trusted local representative. We provide independent oversight, professional reporting and on-the-ground support, giving you confidence that your interests are being protected with transparency, accountability and integrity.
+            Whether you&apos;re managing a construction project, overseeing a business, supporting loved ones or investing from overseas, Elysian Global acts as your trusted local representative. We provide independent oversight, professional reporting and on-the-ground support, giving you confidence that your interests are being protected with transparency, accountability and integrity.
           </p>
         </div>
 
@@ -91,9 +91,9 @@ const FeaturedPillar = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* On-Site Inspection Visual Card */}
           <div className="lg:col-span-5 rounded-3xl overflow-hidden shadow-2xl border border-white/40 relative h-[420px] md:h-[500px] bg-[#1E2A38] group">
-            <img 
-              src={verificationOnSiteImg} 
-              alt="On-Ground Verification on Site - Elysian Independent Inspection" 
+            <img
+              src={verificationImg}
+              alt="On-Ground Verification on Site - Elysian Independent Inspection"
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#1E2A38]/90 via-transparent to-transparent"></div>

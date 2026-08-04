@@ -2,55 +2,54 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 // Asset imports
-import africanCarerImg from "../../assets/african carer with african elderly man.png";
-import internationalCareImg from "../../assets/carer with an elderly white couple.png";
-import projectAuditImg from "../../assets/d3.png";
-import verificationOnSiteImg from "../../assets/verification on site.png";
-import carerTeamImg from "../../assets/carer team.png";
-import carerElderlyManImg from "../../assets/carerer with elderly man.png";
-import carerElderlyWomanImg from "../../assets/carer with elderly woman.png";
+import consultancyImg from "../../assets/stock/service-consultancy.jpg";
+import constructionImg from "../../assets/stock/service-construction.jpg";
+import businessMonitoringImg from "../../assets/stock/service-business-monitoring.jpg";
+import investmentImg from "../../assets/stock/service-investment.jpg";
+import familyWelfareImg from "../../assets/stock/service-family-welfare.jpg";
+import localRepImg from "../../assets/stock/service-local-rep.jpg";
 
 const Services = () => {
   const featuredServices = [
     {
       title: "Consultancy & Advisory",
       category: "Strategic Planning",
-      image: carerElderlyWomanImg,
+      image: consultancyImg,
       icon: "lightbulb",
       desc: "Tailored guidance for individuals, entrepreneurs, and institutions seeking to explore or expand operations across Southern Africa and Europe."
     },
     {
       title: "Project & Construction Oversight",
       category: "Capital Protection",
-      image: projectAuditImg,
+      image: constructionImg,
       icon: "fact_check",
       desc: "Ensuring your projects stay on track through independent site inspections, progress monitoring, quality observations and milestone verification."
     },
     {
       title: "Business Monitoring",
       category: "On-Ground Audits",
-      image: verificationOnSiteImg,
+      image: businessMonitoringImg,
       icon: "domain",
       desc: "Providing independent assessments of business operations, compliance, performance and service delivery to identify risks and improve accountability."
     },
     {
       title: "Investment Oversight",
       category: "Financial Verification",
-      image: internationalCareImg,
+      image: investmentImg,
       icon: "trending_up",
       desc: "Protecting your investments through independent verification, due diligence, asset inspections and ongoing monitoring to safeguard your financial interests."
     },
     {
       title: "Homecare & Family Welfare",
       category: "Compassionate Support",
-      image: africanCarerImg,
+      image: familyWelfareImg,
       icon: "volunteer_activism",
       desc: "Supporting individuals and families through personalised homecare, welfare visits, care coordination and regular wellbeing updates."
     },
     {
       title: "Local Representation",
       category: "Stakeholder Liaison",
-      image: carerTeamImg,
+      image: localRepImg,
       icon: "handshake",
       desc: "Acting as your trusted representative on the ground by attending meetings, liaising with stakeholders, facilitating communication and resolving issues."
     }

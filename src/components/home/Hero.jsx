@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 import d3Img from "../../assets/d3.png";
 import logo from "../../assets/elysian logo.PNG";
 
@@ -50,8 +51,8 @@ const Hero = ({ fadeInUp, staggerContainer, floatAnimation }) => {
               SPEAK TO OUR TEAM
               <span className="material-symbols-outlined text-sm">arrow_forward</span>
             </Link>
-            <Link to="/our-approach" className="border border-white/30 text-white px-8 py-4 rounded-xl font-medium text-base hover:bg-white/10 transition-all flex items-center gap-3">
-              OUR APPROACH
+            <Link to="/about" className="border border-white/30 text-white px-8 py-4 rounded-xl font-medium text-base hover:bg-white/10 transition-all flex items-center gap-3">
+              ABOUT ELYSIAN
               <span className="material-symbols-outlined text-sm">visibility</span>
             </Link>
           </motion.div>
@@ -103,6 +104,12 @@ const Hero = ({ fadeInUp, staggerContainer, floatAnimation }) => {
       </div>
     </section>
   );
+};
+
+Hero.propTypes = {
+  fadeInUp: PropTypes.object,
+  staggerContainer: PropTypes.object,
+  floatAnimation: PropTypes.object
 };
 
 export default Hero;

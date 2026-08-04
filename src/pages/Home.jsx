@@ -5,7 +5,6 @@ import FeaturedPillar from "../components/home/FeaturedPillar";
 import WhyElysian from "../components/home/WhyElysian";
 import Services from "../components/home/Services";
 import IndustriesWeSupport from "../components/home/IndustriesWeSupport";
-import BrandStory from "../components/home/BrandStory";
 import Certification from "../components/home/Certification";
 import FAQAndProfessionalBoundaries from "../components/home/FAQAndProfessionalBoundaries";
 import HomeCTA from "../components/home/HomeCTA";
@@ -108,7 +107,6 @@ const Home = () => {
       <WhyElysian />
       <Services />
       <IndustriesWeSupport />
-      <BrandStory />
       <Certification />
       <FAQAndProfessionalBoundaries />
       <HomeCTA />
