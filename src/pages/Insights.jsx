@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
-import verificationOnSiteImg from "../assets/verification on site.png";
-import internationalCareImg from "../assets/carer with an elderly white couple.png";
-import projectAuditImg from "../assets/d3.png";
+import verificationImg from "../assets/stock/business-verification.jpg";
+import healthcareImg from "../assets/stock/carer-elderly-couple.jpg";
+import businessImg from "../assets/stock/business-project-audit.jpg";
 
 const Insights = () => {
   const fadeInUp = {
@@ -21,7 +21,7 @@ const Insights = () => {
       date: "July 2026",
       readTime: "5 min read",
       excerpt: "How overseas investors and diaspora families can mitigate construction risk, prevent fraud, and ensure funds are disbursed only after verified physical milestones.",
-      img: verificationOnSiteImg
+      img: verificationImg
     },
     {
       id: "uk-clinical-governance-benchmarks",
@@ -30,7 +30,7 @@ const Insights = () => {
       date: "July 2026",
       readTime: "7 min read",
       excerpt: "An executive analysis by Jean Sigauke (RN, Biomedical Scientist) on elevating healthcare quality assurance, patient safety protocols, and workforce capacity.",
-      img: internationalCareImg
+      img: healthcareImg
     },
     {
       id: "navigating-market-entry",
@@ -39,7 +39,7 @@ const Insights = () => {
       date: "June 2026",
       readTime: "6 min read",
       excerpt: "Strategic roadmap for European companies expanding into Southern Africa, focusing on regulatory compliance, stakeholder mapping, and in-country representation.",
-      img: projectAuditImg
+      img: businessImg
     }
   ];
 

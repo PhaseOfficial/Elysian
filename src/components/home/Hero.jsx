@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
-import d3Img from "../../assets/d3.png";
+import projectAuditImg from "../../assets/stock/business-project-audit.jpg";
 import logo from "../../assets/elysian logo.PNG";
 
 const Hero = ({ fadeInUp, staggerContainer, floatAnimation }) => {
@@ -83,7 +83,7 @@ const Hero = ({ fadeInUp, staggerContainer, floatAnimation }) => {
           className="lg:col-span-5 relative"
         >
           <div className="relative rounded-3xl overflow-hidden border border-white/20 shadow-2xl bg-[#16222F]">
-            <img src={d3Img} alt="Independent On-Ground Project Oversight and Building Audit" className="w-full h-[450px] md:h-[550px] object-cover object-center" />
+            <img src={projectAuditImg} alt="Independent On-Ground Project Oversight and Building Audit" className="w-full h-[450px] md:h-[550px] object-cover object-center" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#1E2A38] via-transparent to-transparent"></div>
             
             {/* Floating Overlay Badge */}

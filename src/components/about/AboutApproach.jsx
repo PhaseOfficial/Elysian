@@ -1,9 +1,7 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import approachMeetingImg from "../../assets/stock/about-approach-meeting.jpg";
 
 const AboutApproach = () => {
-  const [openPrinciple, setOpenPrinciple] = useState(null);
   const steps = [
     {
       number: 1,
@@ -168,57 +166,36 @@ const AboutApproach = () => {
         </div>
       </section>
 
-      {/* Why Our Approach Works - Principles (Accordion) */}
+      {/* Why Our Approach Works - Principles (3-column grid) */}
       <section className="py-14 px-6 md:px-12 bg-white border-y border-gray-100">
-        <div className="max-w-4xl mx-auto space-y-6">
+        <div className="max-w-7xl mx-auto space-y-8">
           <div className="text-center space-y-2">
             <div className="inline-flex items-center gap-2 text-[#B6924A] text-xs font-semibold uppercase tracking-widest bg-[#B6924A]/10 px-4 py-1.5 rounded-full border border-[#B6924A]/20">
               <span className="material-symbols-outlined text-sm">task_alt</span>
               Why Our Approach Works
             </div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#1E2A38]">Six Principles That Underpin Every Engagement</h2>
-            <button
-              onClick={() => setOpenPrinciple(openPrinciple === "all" ? null : "all")}
-              className="inline-flex items-center gap-2 text-xs text-[#B6924A] font-bold uppercase tracking-widest hover:text-[#1E2A38] transition-colors pt-2"
-            >
-              <span className="material-symbols-outlined text-sm">{openPrinciple === "all" ? "expand_less" : "expand_more"}</span>
-              {openPrinciple === "all" ? "Collapse All" : "Expand All"}
-            </button>
           </div>
 
-          <div className="space-y-2">
-            {principles.map((p, idx) => {
-              const isOpen = openPrinciple === "all" || openPrinciple === idx;
-              return (
-                <div key={idx} className="border border-gray-200 rounded-xl overflow-hidden bg-white">
-                  <button
-                    onClick={() => setOpenPrinciple(openPrinciple === idx ? null : idx)}
-                    aria-expanded={isOpen}
-                    className="w-full flex justify-between items-center p-4 bg-white hover:bg-[#F7F4EE] transition-colors text-left"
-                  >
-                    <span className="font-bold text-sm text-[#1E2A38]">{p.title}</span>
-                    <span className={`material-symbols-outlined text-[#B6924A] transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}>
-                      expand_more
-                    </span>
-                  </button>
-                  <AnimatePresence initial={false}>
-                    {isOpen && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.25, ease: "easeInOut" }}
-                        style={{ overflow: "hidden" }}
-                      >
-                        <div className="px-4 pb-4 pt-1 text-gray-700 font-light text-sm leading-relaxed border-t border-gray-100">
-                          {p.desc}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {principles.map((p, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: idx * 0.05 }}
+                className="bg-[#F7F4EE] rounded-2xl p-5 border border-gray-100 hover:border-[#B6924A]/40 transition-all space-y-2"
+              >
+                <div className="flex items-center gap-2">
+                  <span className="flex-shrink-0 w-8 h-8 rounded-lg bg-[#1E2A38] text-[#B6924A] flex items-center justify-center text-xs font-bold">
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="font-bold text-sm text-[#1E2A38] leading-tight">{p.title}</h3>
                 </div>
-              );
-            })}
+                <p className="text-gray-700 font-light text-xs leading-relaxed">{p.desc}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

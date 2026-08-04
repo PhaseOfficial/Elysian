@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import founderImg from "../../assets/gin proffessional photo.jpeg";
-import carerTeamImg from "../../assets/carer team.png";
+import teamImg from "../../assets/stock/team-meeting.jpg";
 
 const BrandStory = () => {
   return (
@@ -47,7 +47,7 @@ const BrandStory = () => {
                 <span className="text-[10px] md:text-xs font-semibold uppercase tracking-wider">Independent Representation</span>
               </div>
               <div className="rounded-3xl overflow-hidden border border-white/20 shadow-2xl h-64 md:h-72 bg-[#16222F]">
-                <img src={carerTeamImg} alt="Elysian Leadership and Professional Team" className="w-full h-full object-cover" />
+                <img src={teamImg} alt="Elysian Leadership and Professional Team" className="w-full h-full object-cover" />
               </div>
             </motion.div>
           </div>

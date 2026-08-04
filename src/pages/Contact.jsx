@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import emergencyImg from "../assets/emergency.png";
+import emergencyImg from "../assets/stock/emergency-response.jpg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({

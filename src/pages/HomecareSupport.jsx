@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
-import africanCarerImg from "../assets/african carer with african elderly man.png";
-import carerElderlyWomanImg from "../assets/carer with elderly woman.png";
-import internationalCareImg from "../assets/carer with an elderly white couple.png";
-import carerTeamImg from "../assets/carer team.png";
+import welfareAuditImg from "../assets/stock/carer-elderly-african.jpg";
+import clinicalLiaisonImg from "../assets/stock/carer-elderly-woman.jpg";
+import careQualityImg from "../assets/stock/carer-elderly-couple.jpg";
+import emergencyWelfareImg from "../assets/stock/emergency-response.jpg";
 
 const HomecareSupport = () => {
   const fadeInUp = {
@@ -21,7 +21,7 @@ const HomecareSupport = () => {
       icon: "volunteer_activism",
       desc: "Independent, compassionate welfare monitoring for elderly family members. We conduct regular physical visits, evaluate care delivery, and ensure living conditions meet high standards.",
       features: ["Physical Home Welfare Visits", "Caregiver Accountability Checks", "Comprehensive Family Status Logs"],
-      img: africanCarerImg
+      img: welfareAuditImg
     },
     {
       title: "Medical & Clinical Liaison",
@@ -29,7 +29,7 @@ const HomecareSupport = () => {
       icon: "medical_services",
       desc: "Coordinating medical appointments, doctor consultations, medication schedules, and clinical follow-ups with qualified local healthcare practitioners.",
       features: ["Doctor & Hospital Liaison", "Medication Adherence Checks", "Clinical Summary Reports"],
-      img: carerElderlyWomanImg
+      img: clinicalLiaisonImg
     },
     {
       title: "Care Quality Assurance",
@@ -37,7 +37,7 @@ const HomecareSupport = () => {
       icon: "verified",
       desc: "Bringing UK healthcare leadership and registered nursing experience to audit homecare staff, care homes, and private caregivers for quality and safety.",
       features: ["Caregiver Quality Audits", "Patient Safety Assessments", "Professional Care Standards"],
-      img: internationalCareImg
+      img: careQualityImg
     },
     {
       title: "Emergency Welfare Escalation",
@@ -45,7 +45,7 @@ const HomecareSupport = () => {
       icon: "emergency",
       desc: "Dedicated rapid response and escalation desk for diaspora clients requiring urgent health checks, immediate site visits, or emergency care coordination.",
       features: ["24/7 Rapid Communication", "Immediate On-Ground Verification", "Emergency Care Coordination"],
-      img: carerTeamImg
+      img: emergencyWelfareImg
     }
   ];
 

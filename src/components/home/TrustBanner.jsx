@@ -1,7 +1,5 @@
-import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
-import emergencyImg from "../../assets/emergency.png";
-import carerElderlyWomanImg from "../../assets/carer with elderly woman.png";
+import emergencyImg from "../../assets/stock/emergency-response.jpg";
 
 const TrustBanner = () => {
   const trustItems = [
@@ -11,7 +9,8 @@ const TrustBanner = () => {
     { title: "Ethical Governance", desc: "100% independent representation, acting exclusively on behalf of our clients." },
     { title: "Transparent Reporting", desc: "Comprehensive audit logs, site photos, video proof, and financial verification." },
     { title: "Cross-Border Partnerships", desc: "Bridging institutions, healthcare providers, investors, and families." },
-    { title: "Personalised Client Support", desc: "Tailored advisory and dedicated representation built around your specific goals." }
+    { title: "Personalised Client Support", desc: "Tailored advisory and dedicated representation built around your specific goals." },
+    { title: "Tailored Solutions", desc: "Every client is unique — bespoke strategies designed around your goals, region and specific situation." }
   ];
 
   return (

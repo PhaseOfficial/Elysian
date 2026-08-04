@@ -3,17 +3,12 @@ import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 
 // Assets
-import projectAuditImg from "../assets/d3.png";
-import verificationOnSiteImg from "../assets/verification on site.png";
-import africanCarerImg from "../assets/african carer with african elderly man.png";
-import internationalCareImg from "../assets/carer with an elderly white couple.png";
-import carerTeamImg from "../assets/carer team.png";
-import carerElderlyManImg from "../assets/carerer with elderly man.png";
+import businessProjectAuditImg from "../assets/stock/business-project-audit.jpg";
+import businessVerificationImg from "../assets/stock/business-verification.jpg";
+import teamMeetingImg from "../assets/stock/team-meeting.jpg";
+import carerAfricanImg from "../assets/stock/carer-elderly-african.jpg";
+import carerElderlyManImg from "../assets/stock/carer-elderly-man.jpg";
 import founderImg from "../assets/gin proffessional photo.jpeg";
-import reablementImg from "../assets/reablement.png";
-import supportedLivingImg from "../assets/supported-living.png";
-import livingImg from "../assets/living.png";
-import mentalHealthImg from "../assets/mental-health.png";
 
 const ServicesPage = () => {
   const fadeInUp = {
@@ -33,7 +28,7 @@ const ServicesPage = () => {
       desc: "Ensuring your projects stay on track through independent site inspections, progress monitoring, quality observations and milestone verification, giving you confidence that work is being completed as planned.",
       features: ["Independent Site Inspections", "Milestone Sign-Off & Verification", "Quality Observations & Audits"],
       color: "bg-[#B6924A]/10 text-[#B6924A] border-[#B6924A]/20",
-      img: projectAuditImg
+      img: businessProjectAuditImg
     },
     {
       id: "business-monitoring-audits",
@@ -43,7 +38,7 @@ const ServicesPage = () => {
       desc: "Providing independent assessments of business operations, compliance, performance and service delivery to identify risks, improve accountability and support informed decision-making.",
       features: ["Operational Performance Audits", "Risk & Compliance Assessments", "Financial Disbursal Controls"],
       color: "bg-[#1E2A38]/10 text-[#1E2A38] border-[#1E2A38]/20",
-      img: verificationOnSiteImg
+      img: businessVerificationImg
     },
     {
       id: "investment-oversight",
@@ -53,7 +48,7 @@ const ServicesPage = () => {
       desc: "Protecting your investments through independent verification, due diligence, asset inspections and ongoing monitoring, ensuring transparency and safeguarding your financial interests.",
       features: ["Independent Verification", "Asset & Property Inspections", "Due Diligence & Progress Audits"],
       color: "bg-[#16222F]/10 text-[#16222F] border-[#16222F]/20",
-      img: internationalCareImg
+      img: businessVerificationImg
     },
     {
       id: "local-representation-mediation",
@@ -63,7 +58,7 @@ const ServicesPage = () => {
       desc: "Acting as your trusted representative on the ground by attending meetings, liaising with stakeholders, facilitating communication and resolving issues to protect your interests when you cannot be present.",
       features: ["Meeting Attendance & Representation", "Stakeholder & Contractor Liaison", "Dispute Resolution & Mediation"],
       color: "bg-[#1E2A38]/10 text-[#1E2A38] border-[#1E2A38]/20",
-      img: carerTeamImg
+      img: teamMeetingImg
     },
     {
       id: "homecare-support-family-welfare",
@@ -73,7 +68,7 @@ const ServicesPage = () => {
       desc: "Supporting individuals and families through personalised homecare, welfare visits, care coordination and regular wellbeing updates, providing reassurance and peace of mind for loved ones living abroad.",
       features: ["Personalised Homecare Coordination", "Regular Wellbeing & Welfare Visits", "Caregiver Audits & Updates"],
       color: "bg-[#B6924A]/10 text-[#B6924A] border-[#B6924A]/20",
-      img: africanCarerImg
+      img: carerAfricanImg
     },
     {
       id: "independent-reporting",

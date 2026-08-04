@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
-import verificationOnSiteImg from "../assets/verification on site.png";
-import projectAuditImg from "../assets/d3.png";
+import projectAuditImg from "../assets/stock/business-project-audit.jpg";
+import businessVerificationImg from "../assets/stock/business-verification.jpg";
 
 const Business = () => {
   const fadeInUp = {
@@ -27,7 +27,7 @@ const Business = () => {
       icon: "public",
       desc: "Guiding European and international businesses seeking to enter Southern African markets, providing regulatory mapping, local insight, and stakeholder liaisons.",
       features: ["Regulatory & Sector Mapping", "Feasibility Studies", "In-Country Launch Guidance"],
-      img: verificationOnSiteImg
+      img: businessVerificationImg
     },
     {
       title: "Operational Systems",
@@ -43,7 +43,7 @@ const Business = () => {
       icon: "lightbulb",
       desc: "Providing high-level strategic advisory for corporate leadership teams, entrepreneurs, and institutional clients seeking sustainable long-term value creation.",
       features: ["Strategic Vision & Governance", "Risk Mitigation Frameworks", "Executive Advisory Desk"],
-      img: verificationOnSiteImg
+      img: businessVerificationImg
     },
     {
       title: "Growth Consultancy",
