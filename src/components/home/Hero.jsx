@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 import projectAuditImg from "../../assets/stock/business-project-audit.jpg";
-import logo from "../../assets/elysian logo.PNG";
 
 const Hero = ({ fadeInUp, staggerContainer, floatAnimation }) => {
   return (
@@ -17,27 +16,6 @@ const Hero = ({ fadeInUp, staggerContainer, floatAnimation }) => {
           animate="animate"
           className="lg:col-span-7 space-y-8 text-center lg:text-left"
         >
-          {/* Prominent Company Brand Emblem */}
-          <motion.div variants={fadeInUp} className="flex items-center gap-4 justify-center lg:justify-start">
-            <img src={logo} alt="Elysian Consulting Ltd Logo" className="h-16 md:h-20 w-auto object-contain bg-white/10 p-2.5 rounded-2xl border border-white/20 shadow-2xl backdrop-blur-md" />
-            <div className="flex flex-col text-left">
-              <span className="text-xl md:text-2xl font-bold tracking-tight text-white uppercase">ELYSIAN CONSULTING</span>
-              <span className="text-xs text-[#B6924A] font-semibold tracking-widest uppercase">International Advisory & Oversight</span>
-            </div>
-          </motion.div>
-
-          <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 bg-[#B6924A]/15 px-4 py-2 rounded-full text-[#B6924A] text-xs font-semibold uppercase tracking-widest border border-[#B6924A]/30 mx-auto lg:mx-0">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#B6924A] opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#B6924A]"></span>
-            </span>
-            UNITED KINGDOM LEADERSHIP & GOVERNANCE STANDARDS
-          </motion.div>
-
-          <motion.div variants={fadeInUp} className="text-[#B6924A] font-semibold text-xs md:text-sm uppercase tracking-widest">
-            International Standards • Independent Oversight • Local Execution
-          </motion.div>
-          
           <motion.h1 variants={fadeInUp} className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.15]">
             Professional Services Across Borders
           </motion.h1>

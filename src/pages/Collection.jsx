@@ -88,7 +88,8 @@ const ServicesPage = () => {
     { title: "Healthcare Consultancy & Advisory", icon: "medical_services", desc: "Strategic advice, facility operational planning, and service improvement for healthcare providers and NGOs." },
     { title: "Workforce Development & Leadership", icon: "groups_3", desc: "Capacity building, clinical training, leadership coaching, and standardized operating procedure implementation." },
     { title: "Care Infrastructure & Service Development", icon: "domain", desc: "Designing reablement pathways, supported living quality assurance, and specialized care infrastructure." },
-    { title: "Homecare & Family Support", icon: "volunteer_activism", desc: "Doctor & hospital liaison, caregiver quality audits, and ongoing wellbeing visits for family members." }
+    { title: "Homecare & Family Support", icon: "volunteer_activism", desc: "Doctor & hospital liaison, caregiver quality audits, and ongoing wellbeing visits for family members." },
+    { title: "International Health Partnerships & Community Health", icon: "public", desc: "Cross-border collaboration with healthcare providers, NGOs, governments, and communities to strengthen health systems and deliver sustainable health initiatives." }
   ];
 
   return (
